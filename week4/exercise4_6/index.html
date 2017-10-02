@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Sept 25 2017
+  Description: Exercise 4.6 from Week 4
+  Page: Tables with row and column span - just some random table cells.
+  Files: exercise7.html - the chess board exercise 4.7
+  -->
+  <head>
+    <title>Week 4 Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi Jollymore">
+    <meta name="description" content="Week 4 examples">
+    <meta name="viewport" content="width=device-width,initial-scale:1.0">
+   
+  </head>
+  
+  <body>
+    <!-- header with title of page -->
+    <header>
+      <h1>Exercise 4.3</h1>
+    </header>
+    
+    <!-- I added comments to help you out -->
+    
+    <table>
+      <tr> <!-- total of 5 cells across: 3 + 1 + 1 -->
+        <td colspan="3">Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+      </tr>
+      <tr> <!-- 5 cells again: 1 + 1 + 1 + 2 -->
+        <td rowspan="4">Cell 4</td>
+        <td>5</td>
+        <td>6</td>
+        <td colspan="2" rowspan="3">Cell 7</td>
+      </tr>
+      <tr> <!-- 5 cells: 1 for 4; 2 defined as 8, 9; and 2 for 7 -->
+        <!-- Cell 4, which was already defined -->
+        <td>8</td>
+        <td>9</td>
+        <!-- Cell 7 (2 columns), which was already defined -->
+      </tr>
+      <tr> <!-- 5 cells: 1 for 4; 2 defined as 10, 11; and 2 for 7 -->
+        <!-- Cell 4, which was already defined -->
+        <td>10</td>
+        <td>11</td>
+        <!-- Cell 7 (2 columns), which was already defined -->
+      </tr>
+      <tr> <!-- 5 cells: 1 for 4; 2 defined as 12, 13, and cells 14 and 15 -->
+        <!-- Cell 4, which was already defined -->
+        <td>12</td>
+        <td>13</td>
+        <td>Cell 14</td>
+        <td>Cell 15</td>
+      </tr>
+    </table>
+    
+    <!-- footer with copyright info -->
+    <footer>
+      <address>Wendi Jollymore, &copy; 2017 Sheridan College</address>
+    </footer>
+  </body>
+</html>
