@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Sept 25 2017
+  Description: Exercise 5_3
+  Page: Form that collects information about a person's
+  physical description.
+  -->
+  <head>
+    <title>Week 5 Practice Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi J">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://jollymor.dev.fast.sheridanc.on.ca/syst10049/css/week5.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Physical Description</h1>
+    </header>
+    
+    <!-- physical description form -->
+    <form name="frmDesc">
+      <p>
+        <!-- name of person this describes -->
+        <label for="txtName">Person's Name:</label>
+        <input type="text" size="25" required name="txtName" 
+          id="txtName">
+        <br>
+        
+        <!-- physical description of person -->
+        <fieldset>
+          <legend>Height:</legend>
+          <input type="text" name="txtFeet" id="txtFeet">
+          <label for="txtFeet">feet</label>
+          <input type="text" name="txtInch" id="txtInch">
+          <label for="txtInch">inches</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="radio" checked name="gender" id="optFemale">
+          <label for="optFemale">Female</label>
+          <input type="radio" name="gender" id="optMale">
+          <label for="optMale">Male</label>
+        </fieldset>
+      </p>
+      <p>
+        <label for="ddlEyes">Eye Colour:</label>
+        <select name="ddlEyes" id="ddlEyes">
+          <option value="blue">Blue</option>
+          <option value="brown" selected>Brown</option>
+          <option value="green">Green</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <p>  
+        <label for="lstHair">Hair Colour:</label>
+        <br>
+        <select name="lstHair" id="lstHair" size="4">
+          <option value="black">Black</option>
+          <option value="blonde">Blonde</option>
+          <option value="brown" selected>Brown</option>
+          <option value="grey">Grey</option>
+          <option value="red">Red</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <p>
+        <label for="txtFeatures">Distinguishing Features:</label>
+        <br>
+        <textarea name="txtFeatures" id="txtFeatures" 
+          rows="4" cols="50"></textarea>
+      </p>
+        
+      <!-- form submission (ADD) or reset -->      
+      <p>
+        <input type="submit"> 
+        <input type="reset">
+      </p>
+      
+    </form>
+    
+    <footer>
+      <address>&copy; 2017 Wendi Jollymore, Sheridan College</address>
+    </footer>
+  </body>
+</html>
