@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Sept 25 2017
+  Description: Exercise 5_2
+  Page: Form that allows user to add a bookmark to some
+  mystery bookmark repository.
+  -->
+  <head>
+    <title>Week 5 Practice Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi J">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://jollymor.dev.fast.sheridanc.on.ca/syst10049/css/week5.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Add a Bookmark</h1>
+    </header>
+    
+    <!-- just some quick instructions -->
+    <p>Add your bookmark by entering the information
+    below.</p>
+    
+    <!-- add bookmark form -->
+    <form name="frmAdd">
+      <p>
+        <!-- I added size attributes to make it look cooler -->
+        <label for="txtTitle">Page Title:</label>
+        <input type="text" size="55" required name="txtTitle" id="txtTitle">
+        <br>
+        
+        <label for="txtUrl">URL:</label>
+        <input type="url" required name="txtUrl" id="txtUrl"
+          size="60" maxlenghth="2083">
+        <br>
+        <label for="txtDes">Description of Page:</label>
+        <br>
+        <textarea name="txtDesc" id="txtDesc" rows="4" cols="70"></textarea>
+      </p>
+        
+      <p>
+        <label for="txtEmail">Email Address:</label>
+        <input type="email" name="txtEmail" id="txtEmail" 
+          size="50" maxlenght="254">
+      </p>
+      
+      <!-- form submission (ADD) or reset -->      
+      <p>
+        <input type="submit" value="Add"> 
+        <input type="reset">
+      </p>
+      
+    </form>
+    
+    <footer>
+      <address>&copy; 2017 Wendi Jollymore, Sheridan College</address>
+    </footer>
+  </body>
+</html>
