@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Sept 25 2017
+  Description: Exercise 5_4
+  Page: Form for ordering pizza.
+  -->
+  <head>
+    <title>Week 5 Practice Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi J">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://jollymor.dev.fast.sheridanc.on.ca/syst10049/css/week5.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Pizza Order Form</h1>
+    </header>
+    
+    <!-- Note: I added some tables to make it look nicer. -->
+    
+    <!-- pizza order form -->
+    <form name="frmPizza">
+
+        <!-- customer information -->
+      <table>
+        <tr>
+          <td><label for="txtName">Name:</label></td>
+          <td><input type="text" size="25" required 
+            name="txtName" id="txtName">
+          </td>
+        </tr>
+        <tr>
+          <td><label for="txtAddress">Address:</label></td>
+          <td><input type="text" size="25" required 
+            name="txtAddress" id="txtAddress"></td>
+        </tr>
+        <tr>
+          <td><label for="txtPhone">Phone:</label></td>
+          <td><input type="text" size="25" required 
+            name="txtPhone" id="txtPhone"></td>
+        </tr>
+      </table>
+        
+        <!-- pizza configuration -->
+        <fieldset>
+          <legend>Choose a Size:</legend>
+          <input type="radio" name="size" id="optExLarge">
+          <label for="optExLarge">Extra Large</label>
+          <input type="radio" name="size" id="optLarge">
+          <label for="optLarge">Large</label>
+          <input type="radio" checked name="size" id="optMed">
+          <label for="optMed">Medium</label>
+          <input type="radio" name="size" id="optSmall">
+          <label for="optSmall">Small</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Choose Toppings:</legend>
+          <table>
+            <tr>
+              <td>
+                <input type="checkbox" name="chkPep" id="chkPep">
+                <label for="chkPep">Pepperoni</label><br>
+                <input type="checkbox" name="chkMush" id="chkMush">
+                <label for="chkMush">Mushrooms</label><br>
+                <input type="checkbox" name="chkOnion" id="chkOnion">
+                <label for="chkOnion">Onion</label>
+              </td>
+              <td>
+                <input type="checkbox" name="chkPepr" id="chkPepr">
+                <label for="chkPepr">Peppers</label><br>
+                <input type="checkbox" name="chkBacon" id="chkBacon">
+                <label for="chkBacon">Bacon</label><br>
+                <input type="checkbox" name="chkCheese" id="chkCheese">
+                <label for="chkCheese">Extra Cheese</label>
+              </td>
+              <td>
+                <input type="checkbox" name="chkTom" id="chkTom">
+                <label for="chkTom">Tomato</label><br>
+                <input type="checkbox" name="chkOlive" id="chkOlive">
+                <label for="chkOlive">Olives</label><br>
+                <input type="checkbox" name="chkSaus" id="chkSaus">
+                <label for="chkSaus">Sausage</label>
+              </td>
+            </tr>            
+          </table>
+        </fieldset>
+        
+        <p><label for="ddlDeliver">How do you want to obtain your pizza?</label>
+        <select name="ddlDeliver" id="ddlDeliver">
+          <option value="1">Pick Up</option>
+          <option value="2">Delivery</option>
+          <option value="3">Drone</option>
+          <option value="4">Teleportation</option>
+          <option value="5" selected>Telekinesis</option>
+        </select>
+        </p>
+      
+      <!-- form submission (check out) or reset -->      
+      <p>
+        <input type="submit" value="Check Out"> 
+        <input type="reset" value="Clear">
+      </p>
+      
+    </form>
+    
+    <footer>
+      <address>&copy; 2017 Wendi Jollymore, Sheridan College</address>
+    </footer>
+  </body>
+</html>
