@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Sept 25 2017
+  Description: Exercise 5_1
+  Page: Form that allows user to rate a wine tasting.
+  -->
+  <head>
+    <title>Week 5 Practice Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi J">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="http://jollymor.dev.fast.sheridanc.on.ca/syst10049/css/week5.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Wendi's Winery: Taster's Survey</h1>
+    </header>
+    
+    <!-- just some quick instructions -->
+    <p>Please rate the wine you tasted on a scale from
+    1 (terrible) to 10 (excellent).</p>
+    
+    <!-- taster's survey form -->
+    <form name="frmWine">
+      <p>
+        <label for="lstWines">Wine:</label>
+        <select name="lstWines" id="lstWines">
+          <option value="1">Coder's Red</option>
+          <option value="2">Coder's White</option>
+          <option value="3">Geeky Geeky Gew&uuml;rztraminer</option>
+          <option value="4">Python Pinot Noir</option>
+          <option value="5">Teacher's Pet: Late Harvest Vidal</option>
+          <option value="6">The A+ Riesling Ice Wine</option>
+          <option value="7">Sparkling Syntax Cabernet/Vidal blend</option>
+        </select>
+        
+        <label for="txtRate">Rating:</label>
+        <input type="number" min="1" max="10" step="1" 
+          value="1" name="txtRate" id="txtRate">
+        <br>
+      
+        <!-- comments question wasn't part of assignment but 
+        it made sense to have it -->
+        <label for="txtComments">Your comments about this 
+        wine:</label><br>
+        <textarea name="txtComments" id="txtComments"
+          rows="5" cols="65"></textarea>
+      </p>
+      
+      <!-- email signup -->
+      <p>
+        <label for="txtEmail">Sign up for our mailing list:</label>
+        <input type="email" name="txtEmail" id="txtEmail">
+      </p>
+      
+      <!-- form submission or reset -->
+      <p>
+        <input type="submit"> 
+        <input type="reset">
+      </p>
+      
+    </form>
+    
+    <footer>
+      <address>&copy; 2017 Wendi Jollymore, Sheridan College</address>
+    </footer>
+  </body>
+</html>
