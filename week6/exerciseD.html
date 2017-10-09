@@ -5,39 +5,43 @@
   Assignment: n/a
   Date: Oct 1 2017
   Description: Mid Term Practice Exercises
-  Page: Question 2c: A table showing common HTML entities.
+  Page: Question 2d: Nested list of currency conversions.
   -->
   <head>
     <title>Practice Exercises</title>
     <meta charset="utf-8">
     <meta name="author" content="Wendi J">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="http://jollymor.dev.fast.sheridanc.on.ca/syst10049/css/week4.css">
   </head>
   
   <body>
     <header>
-      <h1>Practice Exercise</h1>
+      <h1>Currency Conversions Oct 5 2017</h1>
     </header>
     
-    <!-- table with some common HTML entities -->
-    <table>
-      <tr>
-        <th colspan="2">Special Characters</th>
-      </tr>
-      <tr> <!-- pointy brackets -->
-        <td>&lt; and &gt;</td>
-        <td>&amp;lt; and &amp;gt;</td>
-      </tr>
-      <tr> <!-- ampersand character -->
-        <td>&amp;</td>
-        <td>&amp;amp;</td>
-      </tr>
-      <tr> <!-- space -->
-        <td>(no break space)</td>
-        <td>&amp;nbsp;</td>
-      </tr>
-    </table>
+    <!-- currency conversions for Canadian dollars $ -->
+    <ul>
+      <!-- from various currencies to Canadian $ -->
+      <li>To $Canadian
+        <ul>
+          <li>$US 1.00 = $1.25</li>
+          <li>&euro; 1.00 = $1.47</li>
+          <li>&pound; 1.00 = $1.66</li>
+          <li>&#20803; 1.00 = $0.19</li>
+          <li>&#x20B9; 1.00 = $0.02</li>
+        </ul>
+      </li>
+      <!-- Canadian $ to various currencies -->
+      <li>From $Canadian
+        <ul>
+          <li>$1.00 = $US 0.80</li>
+          <li>$1.00 = &euro; 0.68</li>
+          <li>$1.00 = &pound; 0.60</li>
+          <li>$1.00 = &#20803; 5.32</li>
+          <li>$1.00 = &#x20b9; 52.17</li>
+        </ul>
+      </li>
+    </ul>
     
     <!-- standard footer used in all exercises/assignments -->
     <footer>
