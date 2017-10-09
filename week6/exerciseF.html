@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <!-- 
+  Name: Wendi Jollymore
+  Assignment: n/a
+  Date: Oct 1 2017
+  Description: Mid Term Practice Exercises
+  Page: Question 2f: A simple student information form.
+  -->
+  <head>
+    <title>Practice Exercises</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi J">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  
+  <body>
+    <header>
+      <h1>Student Information</h1>
+    </header>
+    
+    <!-- student information form -->
+    <form>
+      <p>
+        <!-- student's full name: mandatory field -->
+        <label for="txtName">Name:</label>
+        <input type="text" id="txtName" required>
+        <br>
+        
+        <!-- term number, must be 1 to 6 -->
+        <label for="txtTerm">Term:</label>
+        <input type="number" min="1" max="6" step="1" value="1">
+        <br>
+        
+        <!-- if student is international or domestic -->
+        <input type="checkbox" id="chkInt">
+        <label for="chkInt">International Student</label>
+      </p>
+      
+      <!-- controls to submit or reset form -->
+      <p>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+      </p>
+    </form>
+    
+    <!-- standard footer used in all exercises/assignments -->
+    <footer>
+      <address>&copy; 2017 Wendi Jollymore, Sheridan College</address>
+    </footer>
+  </body>
+</html>
