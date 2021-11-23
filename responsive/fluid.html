@@ -1,0 +1,125 @@
+<!doctype html>
+<!--
+Wendi Jollymore
+Fall 2019
+
+SEE ALSO css/fluid.css
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi Jollymore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Examples: Fluid</title>
+    <link rel="stylesheet" href="css/fluid.css">
+  </head>
+  
+  <body>
+  
+    <div class="container">
+    
+      <div class="header">
+        <h1>Responsive Design</h1>
+        <h2>Types of Design:  Fluid</h2>
+        <div class="menu"><a href="#">Link 1</a> |
+          <a href="#">Link 2</a> |
+          <a href="#">Link 3</a> |
+          <a href="#">Link 4</a>
+        </div>
+      </div>
+      
+      <div class="main-content">
+        <p>We started using fluid design so that our
+        layouts could respond more to different screen
+        sizes - this is still when everyone was using
+        large laptop and desktop monitors.  When we
+        had to start developing for mobile devices,
+        we used fluid design but it wasn't very
+        effective for smaller screens.</p>
+        
+        <p>Fluid design used percentages and ems to 
+        size items relative to their containers and/or
+        the viewport.  As a screen's size changed (we
+        still didn't have the ability to change orientation
+        for the first while), the items on the page
+        would scale to match.  So an image that was set
+        to 50% of the document body would always stay
+        50% of the page, even when the screen grew or
+        shrank.</p>
+        
+        <p>This page uses a fluid layout, so it adapts
+        a bit better to changes from what was then the
+        standard 4:3 screen to the newer, wider screens.
+        It also adapts to very small screens that you
+        might see on a tablet or smart phone - it's much
+        easier to use than the fixed example, but 
+        not perfect.</p>
+        
+        <p>As with the previous demonstration,
+        try viewing this page in your browser the way
+        you would normally view it on a wide screen, then 
+        try resizing your screen to approximate a 4:3
+        aspect ratio.  You can also try resizing your
+        screen to the size of a tablet and/or smart phone.</p>
+        
+        <p>Feel free to <a href="css/fluid.css">check 
+        the external CSS file</a> I used
+        for this page.  Notice that I'm still using the old
+        style of laying out the page in HTML - using
+        DIV elements instead of using the HTML5 semantic
+        elements like HEADER, FOOTER, MAIN, etc.</p>
+        
+        <div class="fake-content">
+          <h3>Stuff On My Page</h3>
+          
+          <img src="images/cat-friends.png" 
+          alt="kitty friends">
+          
+          <div class="aside-left">
+            <p>Cat ipsum dolor sit amet, when in doubt, wash 
+            and lick yarn hanging out of own butt. Stare at 
+            guinea pigs all of a sudden cat goes crazy. Litter 
+            box is life be superior stand in doorway, unwilling 
+            to chose whether to stay in or go out run up and
+            down stairs. Stand in front of the computer screen. 
+            Fart in owners food kitty kitty eat too much then 
+            proceed to regurgitate all over living room carpet 
+            while humans eat dinner. Meowzer spread kitty 
+            litter all over house you have cat to be kitten 
+            me right meow cat mojo but poop on couch meow 
+            meow mama. That box? i can fit in that box. Miaow 
+            then turn around and show you my bum thinking 
+            longingly about tuna brine. Purr for no reason 
+            jump onto stranger's head yet sniff other 
+            cat's butt and hang jaw half open thereafter 
+            sit in a box for hours. </p>
+          </div>
+          <div class="aside-right">
+            <p>Cat Breeds, there are so many. These are the
+            first five I thought of.</p>
+            <ul>
+              <li>Tabby</li>
+              <li>Siamese</li>
+              <li>Tonkinese</li>
+              <li>Scottish Fold</li>
+              <li>Abyssinian</li>
+            </ul>
+            <p>That's about all I came up with.</p>
+          </div>
+          
+          <!-- this is one reason why people hated the
+          old CSS positioning stuff -->
+          <div class="clearfix"></div>
+          
+        </div>
+
+      </div>
+      
+      <div class="footer">
+        <address>&copy; 2019 Wendi Jollymore</address>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
