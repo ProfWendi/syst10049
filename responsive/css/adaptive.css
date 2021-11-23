@@ -1,0 +1,88 @@
+/* adapt.css: demonstrates how I updated my fixed/fluid
+design with adaptive design.  Note that for the 2 small
+columns, I switched to the inline-block display value,
+which was also introduced around the same time. */
+
+
+body, html {
+  /* just sets the base font, every font setting after
+     this would use % or em; you could also use 
+     100% for the font size, and it would start at whatever
+     the user's system font was set to */
+  font: 16px Arial, sans-serif;
+}
+/* no longer needed
+body {
+  background: #D6E8ED url("../images/trees.png") repeat;
+}
+
+.container {
+  background-color: white;
+  background-image: none;
+  border: 2px solid #4e9cb1;
+  margin: 10px auto;
+  padding: 7px;
+  width: 80%;
+}
+*/
+
+header, footer, aside {
+  border: 1px dashed #95c3d0;
+}
+
+header, footer {
+  background-color: #D6E8ED;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+}
+
+h1 {
+  border-top: 1px dashed #95c3d0;
+  border-bottom: 1px dashed #95c3d0;
+  font-size: 2.0em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+nav {
+  padding: 3px;
+}
+
+nav a {
+  margin: 1px 2px;
+  padding: 15px;
+}
+
+figure img {
+  min-width: 555px;
+  width: 100%;
+}
+
+aside {
+  display: inline-block;
+  margin: 5px;
+  padding: 4px;
+  vertical-align: top;
+  width: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    nav > a {
+      border-bottom: 1px dashed #95c3d0;
+      display: block;
+      padding: 15px;
+    }
+    
+    aside {
+     display: block;
+     width: 100%;
+    }
+    
+    figure img {
+      min-width: 200px;
+    }      
+}
