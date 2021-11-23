@@ -1,0 +1,132 @@
+<!doctype html>
+<!--
+Wendi Jollymore
+Fall 2019
+
+SEE ALSO css/fixed.css
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi Jollymore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Examples: Fixed</title>
+    <link rel="stylesheet" href="css/fixed.css">
+  </head>
+  
+  <body>
+  
+    <div class="container">
+    
+      <div class="header">
+        <h1>Responsive Design</h1>
+        <h2>Types of Design:  Fixed</h2>
+        <div class="menu"><a href="#">Link 1</a> |
+          <a href="#">Link 2</a> |
+          <a href="#">Link 3</a> |
+          <a href="#">Link 4</a>
+        </div>
+      </div>
+      
+      <div class="main-content">
+        <p>Fixed design is how we originally started developing
+        web pages.  Most content was static, there wasn't 
+        much dynamic content (back in the days of dial-up
+        Internet, some people didn't even download images
+        by default, because they were so slow!)</p>
+        
+        <p>Fixed design used absolute size measurements, 
+        such as points (pt), pixels (px), and even
+        centimetres (cm), millimetres (mm) and inches (in)!
+        Back then, people didn't have small mobile devices -
+        everyone used a large laptop or desktop.  All the 
+        screens we viewed things on were very large, but they
+        had an aspect ratio of 4:3, so they were almost
+        square.  Eventually, wider screens became popular,
+        and people had more width to play with when designing
+        web pages.</p>
+        
+        <p>With a fixed layout, your page didn't respond to 
+        changes in viewport size, and certainly not to changes
+        in orientation!  It's not like you could pick up your
+        desktop monitor or laptop and tilt it to change the
+        orientation like we can today with smaller devices!
+        Thinking of that actually makes me laugh a little,
+        and maybe you too, if you're over 35 :D</p>
+        
+        <p>This page uses a fixed layout, and I even designed
+        it how I would have laid it out back in the days when
+        people started using wider screens:  I design for the
+        4:3 screen and add some decorative background for
+        people that had a wider screen.  We didn't want to
+        put content in that extra space, because then people
+        with the 4:3 screens wouldn't see it!</p>
+        
+        <p>Try viewing this page in your browser the way
+        you would normally view it on a wide screen, then 
+        try resizing your screen to approximate a 4:3
+        aspect ratio.  You can also try resizing your
+        screen to the size of a tablet and/or smart phone:
+        you'll notice that it's near impossible to
+        use the page!</p>
+        
+        <p>Feel free to <a href="css/fixed.css">check 
+        the external CSS file</a> I used
+        for this page.  Notice that I even used the old
+        style of laying out the page in HTML - using
+        DIV elements instead of using the HTML5 semantic
+        elements like HEADER, FOOTER, MAIN, etc.</p>
+        
+        <div class="fake-content">
+          <h3>Stuff On My Page</h3>
+          
+          <img src="images/cat-friends.png" 
+          alt="kitty friends">
+          
+          <div class="aside-left">
+            <p>Cat ipsum dolor sit amet, when in doubt, wash 
+            and lick yarn hanging out of own butt. Stare at 
+            guinea pigs all of a sudden cat goes crazy. Litter 
+            box is life be superior stand in doorway, unwilling 
+            to chose whether to stay in or go out run up and
+            down stairs. Stand in front of the computer screen. 
+            Fart in owners food kitty kitty eat too much then 
+            proceed to regurgitate all over living room carpet 
+            while humans eat dinner. Meowzer spread kitty 
+            litter all over house you have cat to be kitten 
+            me right meow cat mojo but poop on couch meow 
+            meow mama. That box? i can fit in that box. Miaow 
+            then turn around and show you my bum thinking 
+            longingly about tuna brine. Purr for no reason 
+            jump onto stranger's head yet sniff other 
+            cat's butt and hang jaw half open thereafter 
+            sit in a box for hours. </p>
+          </div>
+          <div class="aside-right">
+            <p>Cat Breeds, there are so many. These are the
+            first five I thought of.</p>
+            <ul>
+              <li>Tabby</li>
+              <li>Siamese</li>
+              <li>Tonkinese</li>
+              <li>Scottish Fold</li>
+              <li>Abyssinian</li>
+            </ul>
+            <p>That's about all I came up with.</p>
+          </div>
+          
+          <!-- this is one reason why people hated the
+          old CSS positioning stuff -->
+          <div class="clearfix"></div>
+        </div>
+        
+      </div>
+      
+      <div class="footer">
+        <address>&copy; 2019 Wendi Jollymore</address>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
