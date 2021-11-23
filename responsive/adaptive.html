@@ -1,0 +1,138 @@
+<!doctype html>
+<!--
+Wendi Jollymore
+Fall 2019
+
+SEE ALSO css/adaptive.css
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi Jollymore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Examples: Adaptive</title>
+    <link rel="stylesheet" href="css/adapt.css">
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>Responsive Design</h1>
+      <h2>Types of Design:  Adaptive</h2>
+      <nav><a href="#">Link 1</a> 
+        <a href="#">Link 2</a> 
+        <a href="#">Link 3</a> 
+        <a href="#">Link 4</a>
+      </nav>
+    </header>
+    
+    <main>
+      <p>Adaptive design arrived just in time: many
+      users were visiting pages using smaller devices
+      such as smart phones and tablets, and we needed
+      a way to make the user experience just as good
+      as if they were on a desktop or laptop computer.
+      Before adaptive design, you would have to design
+      2 of everything: For example, you'd have your
+      regular index.html page that people would view,
+      and near the top of the page you'd have a very
+      clear link to the mobile version of that page,
+      such as index_mobile.html.  You'd just have to 
+      hope that mobile users saw the link and bookmarked
+      the mobile version of the page.  It also meant
+      that you had to update both versions of every
+      page whenever something changed.  Yuck.</p>
+      
+      <p>Fluid design uses media queries to detect
+      things like screen size and orientation, and then
+      apply the appropriate CSS rules.  For example,
+      you might have a menu appear in a column down
+      the left side of the screen, but when the media
+      query detected that the screen width reached
+      a certain smaller size, it changed the CSS so
+      that the menu moved into the main part of the
+      document so there was only one column in the
+      page's layout.  You can even have certain CSS
+      rules change when a page is printed (I do this
+      on my own notes pages: when the page is printed,
+      I unhide all the hidden pages and expand all
+      the items that are collapsed).</p>
+      
+      <p>We still sometimes used absolute and relative
+      measurements with adaptive design: we often used
+      pixels for things like margins, borders, and padding,
+      and still preferred using em and % for font sizes.</p>
+      
+      <p>This page uses a media query: I defined
+      my CSS to lay out the page as if it were a
+      large screen, and then applied a different
+      layout for small screens.</p>
+      
+      <p>As with the previous demonstration,
+      try viewing this page in your browser the way
+      you would normally view it on a wide screen, then 
+      try resizing your screen to approximate a 4:3
+      aspect ratio.  You can also try resizing your
+      screen to the size of a tablet and/or smart phone.</p>
+      
+      <p>Feel free to <a href="css/adapt.css">check 
+      the external CSS file</a> I used
+      for this page.  I redesigned the HTML to used
+      the HTML5 semantic elements, since these were
+      finally available when adaptive design became
+      popular. I also got rid of the main container
+      since, with adaptive design, it's no longer 
+      needed.</p>
+      
+      <section>
+        <h3>Stuff On My Page</h3>
+        
+        <figure>
+          <img src="images/cat-friends.png" 
+          alt="kitty friends">
+          <figcaption>Two kitties poking their heads
+          out of a box.</figcaption>
+        </figure>
+        
+        <aside>
+          <p>Cat ipsum dolor sit amet, when in doubt, wash 
+          and lick yarn hanging out of own butt. Stare at 
+          guinea pigs all of a sudden cat goes crazy. Litter 
+          box is life be superior stand in doorway, unwilling 
+          to chose whether to stay in or go out run up and
+          down stairs. Stand in front of the computer screen. 
+          Fart in owners food kitty kitty eat too much then 
+          proceed to regurgitate all over living room carpet 
+          while humans eat dinner. Meowzer spread kitty 
+          litter all over house you have cat to be kitten 
+          me right meow cat mojo but poop on couch meow 
+          meow mama. That box? i can fit in that box. Miaow 
+          then turn around and show you my bum thinking 
+          longingly about tuna brine. Purr for no reason 
+          jump onto stranger's head yet sniff other 
+          cat's butt and hang jaw half open thereafter 
+          sit in a box for hours. </p>
+        </aside>
+        <aside>
+          <p>Cat Breeds, there are so many. These are the
+          first five I thought of.</p>
+          <ul>
+            <li>Tabby</li>
+            <li>Siamese</li>
+            <li>Tonkinese</li>
+            <li>Scottish Fold</li>
+            <li>Abyssinian</li>
+          </ul>
+          <p>That's about all I came up with.</p>
+        </aside>
+        
+      </section>
+
+    </main>
+    
+    <footer>
+      <address>&copy; 2019 Wendi Jollymore</address>
+    </footer>
+
+  </body>
+</html>
