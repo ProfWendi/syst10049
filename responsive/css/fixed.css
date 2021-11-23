@@ -1,0 +1,68 @@
+/* fixed.css: demonstrates how we used to design
+things using fixed layouts (back in the old days!) */
+
+body, html {
+  font: 16px Arial, sans-serif;
+}
+
+body {
+  background: #D6E8ED url("../images/trees.png") repeat;
+}
+
+.container {
+  background-color: white;
+  background-image: none;
+  border: 2px solid #4e9cb1;
+  margin: 10px auto;
+  padding: 7px;
+  width: 768px;
+}
+
+.header, .footer, .aside-left, .aside-right {
+  border: 1px dashed #95c3d0;
+}
+
+.header, .footer {
+  background-color: #D6E8ED;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+}
+
+h1 {
+  border-top: 1px dashed #95c3d0;
+  border-bottom: 1px dashed #95c3d0;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.menu {
+  padding: 3px;
+}
+
+.fake-content img {
+  margin: auto;
+  width: 750px;
+}
+
+.aside-left, .aside-right {
+  margin: 5px;
+  padding: 4px;
+  vertical-align: top;
+  width: 360px;
+}
+
+.aside-left {
+  float: left;
+}
+
+.aside-right {
+  float: right;
+}
+
+.clearfix{
+  clear:both
+}
