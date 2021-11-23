@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+Wendi Jollymore
+Fall 2019
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Wendi Jollymore">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Examples: Responsive</title>
+    <link rel="stylesheet" href="css/resp.css">
+  </head>
+  
+  <body>
+
+    <header>
+      <h1>Responsive Design</h1>
+      <h2>Types of Design:  Responsive</h2>
+      <nav><a href="#">Link 1</a> 
+        <a href="#">Link 2</a> 
+        <a href="#">Link 3</a> 
+        <a href="#">Link 4</a>
+      </nav>
+    </header>
+    
+    <main>
+	  <section>
+		  <p>Around 2014 more users were accessing web sites
+		  via mobile browsers than with desktop browsers for
+		  the very first time!  Mobile and small-device browsing
+		  was now the norm, and no longer the exception.
+		  For this reason, developers switched to a <strong>Mobile
+		  First</strong> style of development: assuming that
+		  the user was on a smaller device, and then adapting the
+		  layout when a larger screen was detected.  Prior to 
+		  this, developers did the opposite by develping for larger
+		  devices and then "fixing" the layout if a smaller 
+		  device was detected.  Mobile-First CSS made pages faster
+		  because it targeted the larger mobile audience, so the
+		  CSS didn't have to execute media queries to adjust for
+		  the smaller screen size.  It also fit in perfectly with
+		  Progressive Enhancement, since mobile-first technologies
+		  were developed to ensure that a web site was still
+		  usable even when these layouts were added and adjusted.
+		  Furthermore, the idea that an element's styling should
+		  always inherit from parent styling and never "undo" what
+		  was already defined previoulsy in the cascade is also 
+		  easy to maintain with Mobile First CSS.</p>
+		  
+		  <p><strong>Responsive</strong> design includes media queries
+		  and the <strong>fluid
+		  grids</strong> that could respond to changes in 
+		  screen size and easily adjust layouts as necessary.
+		  The CSS Flex Box and CSS Grid were two modules that
+		  were added as fluid grids.  Developers could also
+		  add properties to images to make "fluid images" that adjusted
+		  easily with screen size and layout changes.</p>
+		  
+		  <p>This page uses a media query that's different
+		  from the adaptive example: this time I assume
+		  a single-column layout that works best on a mobile
+		  device, and then when the screen is resized, it uses
+		  CSS Flex Boxes and CSS Grids, depending on the size.</p>
+		  
+		  <p>As with the previous demonstrations,
+		  try viewing this page in your browser the way
+		  you would normally view it on a wide screen, then 
+		  try resizing your screen to approximate a 4:3
+		  aspect ratio.  You can also try resizing your
+		  screen to the size of a tablet and/or smart phone.</p>
+		  
+		  <p>Feel free to <a href="css/resp.css">check  
+		  the external CSS file</a> I used
+		  for this page.  In the HTML I added an extra container
+		  for this text content (I'm not sure if I simply overlooked
+		  this in the adaptive example or just didn't need it, but
+		  it makes more sense to have these paragraphs inside another
+		  kind of container, so I used a section element). 
+		  I added two media queries to adapt the page for tablet size
+		  and then for desktop size. The MAIN element is a column flexbox 
+		  and, for desktop size, the second SECTION element is a CSS grid. 
+		  I added a "grid-container" class to the last section to make
+		  the CSS a bit more efficient, otherwise I was constantly 
+		  using the selector "main > section:last-child" to access all the
+		  child elements of the grid section.</p>
+      </section>
+	  
+      <section class="grid-container">
+        <h3>Stuff On My Page</h3>
+        
+        <figure>
+          <img src="images/cat-friends.png" 
+          alt="kitty friends">
+          <figcaption>Two kitties poking their heads
+          out of a box.</figcaption>
+        </figure>
+        
+        <aside>
+          <p>Cat ipsum dolor sit amet, when in doubt, wash 
+          and lick yarn hanging out of own butt. Stare at 
+          guinea pigs all of a sudden cat goes crazy. Litter 
+          box is life be superior stand in doorway, unwilling 
+          to chose whether to stay in or go out run up and
+          down stairs. Stand in front of the computer screen. 
+          Fart in owners food kitty kitty eat too much then 
+          proceed to regurgitate all over living room carpet 
+          while humans eat dinner. Meowzer spread kitty 
+          litter all over house you have cat to be kitten 
+          me right meow cat mojo but poop on couch meow 
+          meow mama. That box? i can fit in that box. Miaow 
+          then turn around and show you my bum thinking 
+          longingly about tuna brine. Purr for no reason 
+          jump onto stranger's head yet sniff other 
+          cat's butt and hang jaw half open thereafter 
+          sit in a box for hours. </p>
+        </aside>
+        <aside>
+          <p>Cat Breeds, there are so many. These are the
+          first five I thought of.</p>
+          <ul>
+            <li>Tabby</li>
+            <li>Siamese</li>
+            <li>Tonkinese</li>
+            <li>Scottish Fold</li>
+            <li>Abyssinian</li>
+          </ul>
+          <p>That's about all I came up with.</p>
+        </aside>
+        
+      </section>
+
+    </main>
+    
+    <footer>
+      <address>&copy; 2019 Wendi Jollymore</address>
+    </footer>
+
+  </body>
+</html>
