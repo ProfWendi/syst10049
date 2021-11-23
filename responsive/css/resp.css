@@ -1,0 +1,113 @@
+/* resp.css: demonstrates how I updated my adaptive
+design with responsive design.  Quite a bit to see here: 
+I've used mobile-first CSS design, assuming the default is
+a small screen.  Then there are 2 media queries that add
+a flex box for a tablet-sized screen and a grid for a
+desktop-sized screen. */
+
+
+body, html {
+  /* just sets the base font, every font setting after
+     this would use % or em; you could also use 
+     100% for the font size, and it would start at whatever
+     the user's system font was set to */
+  font: 16px Arial, sans-serif;
+}
+
+header, footer, aside {
+  border: 1px dashed #95c3d0;
+}
+
+header, footer {
+  background-color: #D6E8ED;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+}
+
+h1 {
+  border-top: 1px dashed #95c3d0;
+  border-bottom: 1px dashed #95c3d0;
+  font-size: 2.0em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+nav {
+  padding: 3px;
+}
+
+nav a {
+  border-bottom: 1px dashed #95c3d0;
+  display: block;
+  padding: 15px;
+}
+
+figure img {
+  min-width: 200px; 
+  width: 100%;
+}
+
+aside {
+  margin: 5px;
+  padding: 4px;
+  vertical-align: top;
+}
+
+/* tablet size */
+@media only screen and (min-width: 750px) {
+	main {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: stretch;
+		align-content: start;		
+	}
+	figure img {
+		min-width: 400px;
+	}
+	
+	nav a {
+		display: inline;
+		margin: 1px 2px;
+		padding: 15px;
+	}
+	
+	aside {
+		display: inline-block;
+		width: 45%;
+	}
+}
+
+/* desktop size */
+@media only screen and (min-width: 1200px) {
+
+	.grid-container {  /* main > section:last-child */
+		display: grid;
+		grid-template-areas: "head head head head"
+		"fig fig as1 as2"
+		"fig fig as1 as2";
+	}
+	
+	.grid-container > h3:first-child {
+		grid-area: head;
+	}
+	.grid-container > figure {
+		grid-area: fig;
+	}
+	.grid-container > aside:first-child {
+		grid-area: as1;
+	}
+	.grid-container > aside:last-child {
+		grid-area: as2;
+	}
+	
+	aside {
+		width: 95%;
+	}
+	
+	figure img {
+		min-width: 555px;
+	}
+}
