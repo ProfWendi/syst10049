@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <!-- 
   Name: Wendi Jollymore
   Assignment: n/a
@@ -12,29 +12,33 @@
     <meta charset="utf-8">
     <meta name="author" content="Wendi J">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://jollymor.dev.fast.sheridanc.on.ca/res/css/mtPractice.css">
   </head>
   
   <body>
     <header>
-      <h1>Student Information</h1>
+      <h1>Exercise F</h1>
     </header>
     
     <!-- student information form -->
     <form>
       <p>
         <!-- student's full name: mandatory field -->
-        <label for="txtName">Name:</label>
+        <label for="txtName">Name:
         <input type="text" id="txtName" name="txtName" required>
-        <br>
+        </label></p>
         
+      <p>
         <!-- term number, must be 1 to 6 -->
-        <label for="txtTerm">Term:</label>
+        <label for="txtTerm">Term:
         <input type="number"id="txtTerm" name="txtTerm" min="1" max="6" step="1" value="1">
-        <br>
+          </label>
+        </p>
         
+      <p>
         <!-- if student is international or domestic -->
-        <input type="checkbox" id="chkInt" name="chkInt">
-        <label for="chkInt">International Student</label>
+        <label for="chkInt"><input type="checkbox" id="chkInt" name="chkInt">
+        International Student</label>
       </p>
       
       <!-- controls to submit or reset form -->
